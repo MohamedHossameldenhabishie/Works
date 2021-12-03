@@ -1,0 +1,158 @@
+/*------------------------------------*/
+/*Basic Setup*/
+/*------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(224, 224, 224);
+}
+html {
+  background-color: #fff;
+  color: #555;
+  font-family: "Lato", "Arial", "sans-serif";
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+}
+::selection {
+  background-color: #444;
+  color: #fff;
+}
+/*------------------------------------*/
+/*Resuable Compnents*/
+/*------------------------------------*/
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+/*------------------------------------*/
+/*HEADER*/
+/*------------------------------------*/
+
+header {
+  background-color: rgb(46 60 67);
+  /* height: 100vh; */
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+  float: left;
+  margin-top: 0px;
+  border-radius: 50%;
+}
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-top: 40px;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 40px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.2s;
+}
+.main-nav li:hover {
+  border-bottom: 2px solid #fff;
+}
+.main-nav li a:link,
+.main-nav li a:visited {
+  padding: 8px 0;
+  color: #fff;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+}
+
+.icon-header {
+  display: inline-block;
+  font-size: 130%;
+  color: #fff;
+  vertical-align: middle;
+  margin-top: -4px;
+  margin-right: 6px;
+}
+/*------------------------------------*/
+/*Main Content*/
+/*------------------------------------*/
+
+main {
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(background.jpg);
+  background-size: cover;
+  height: 85vh;
+}
+.main-content {
+  margin: 0 auto;
+}
+
+.logo-form {
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin: 0 auto;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.form-input {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.form-input input {
+  width: 300px;
+  padding: 8px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgb(46 60 67);
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+::placeholder {
+  color: #fff;
+}
+
+.link {
+  text-align: center;
+  color: #fff;
+}
+.link a {
+  text-decoration: none;
+  color: rgb(46 60 67);
+  transition: color 0.2s;
+}
+
+.link a:hover,
+.link a:active {
+  color: rgb(46 60 67);
+}
+button {
+  border-radius: 5px;
+  background-color: rgb(46 60 67);
+  padding: 5px;
+  width: 300px;
+  transition: background-color 0.2s;
+}
+button:hover {
+  background-color: rgb(46 60 67);
+}
+.invalid-feedback {
+  margin: 8px auto;
+  width: 300px;
+  text-align: center;
+  color: #e40a11;
+  text-align: center;
+  font-size: 20px;
+  transition: all 0.5s ease;
+}
