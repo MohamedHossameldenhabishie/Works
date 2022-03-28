@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*Start Genarl Style */
+:root{
+    --primary-color:#ecf0f1;
+    --secondary-color:#00A8D3;
+    --hover-effect:#8268B7;
+    --white:#FFFFFF;
+    --ligth-blue:#4e9eff;
+    --belize-hole:#2980b9;
+    --section-color:#383d44;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+/* END gENERAL Style */
+
+/* Start Header */
+header{
+    background-color:var(--primary-color) ;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+.logo{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 1.6em;
+}
+.nav a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--secondary-color);
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+.nav a:hover{
+    color:var(--hover-effect) ;
+}
+/* End Header */
+
+/* Start Main Section */
+section{
+    padding: 100px 200px;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(../assets/images/wallpaperflare.com_wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.main__text__info{
+    color:var(--white) ;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+.text__blue{
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--ligth-blue);
+    font-size: 3em;
+    font-weight: 600;
+}
+.main__text__description{
+    color: var(--white);
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.main__btn{
+    text-decoration: none;
+    color: var(--white);
+    background-color:var(--secondary-color) ;
+    letter-spacing: 1px;
+    font-size: 1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: all 0.7s ease;
+}
+.main__btn:hover{
+    background-color: var(--belize-hole);
+    transform: scale(1.1);
+}
+.main__social__links a{
+    color: var(--white);
+    font-size: 1.7em;
+    padding-right: 30px ;
+}
+/* End Main Section */
+
+/* Start Card section */
+.section__title{
+    display: flex;
+    justify-content: center;
+    color: var(--secondary-color);
+    font-size: 2.2em;
+    font-weight: 800;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+.cards__list{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: var(--white);
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin:15px;
+    transition: all 0.7s ease;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.card__icon{
+    color: var(--secondary-color);
+    font-size: 8em;
+    text-align: center;
+}
+.card__content{
+    text-align: center;
+}
+.card__content__title{
+    color: var(--secondary-color);
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+    text-transform: capitalize;
+}
+.card__content__descrition{
+    text-transform: capitalize;
+}
+/* End Card section */
+
+/* Start Project Section */
+.projects{
+    background-color: var(--section-color);
+}
+.card__list__project{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.project_card{
+    background-color: var(--white);
+    border: 1px solid var(--white);
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: all 0.7s ease;
+}
+.project_card:hover{
+    transform: scale(1.1);
+}
+.project_card:hover .image__poster{
+    opacity: 0.9;
+}
+.image__poster img{
+    width: 100%;
+}
+.card__project__info{
+    padding: 1em;
+}
+.card__project__info__description{
+    font-size: 0.8em;
+    color: #000;
+}
+.card__project__title{
+    display: flex;
+    justify-content:space-between;
+    text-transform: capitalize;
+    font-weight: 800;
+    margin-top: 10px;
+}
+.card__project__link{
+    text-decoration: none;
+    color: var(--ligth-blue);
+}
+.card__project__link:hover{
+    color: var(--hover-effect);
+}
+/* End Project Section */
+
+/* Start Contact */
+.contact__card{
+    background-color: var(--white);
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
+    width: 21.25em;
+    padding: 25px;
+    margin: 15px;
+    transition: all 0.7s ease;
+    border-radius: 10px;
+}
+.contact__card:hover{
+    transform: scale(1.1);
+}
+.contact__title{
+    text-transform: capitalize;
+  margin: 10px;
+}
+/* End Contact */
+@media(max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+    .nav a{
+        padding-left: 10px;
+    }
+    .section__title{
+        font-size: 1.8em;
+    }
+    section{
+        padding: 80px 20px;
+    }
+
+}
+
+@media(max-width:641px){
+    body{
+        font-size: 12px;
+    }
+}
+
